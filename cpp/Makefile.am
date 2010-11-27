@@ -58,7 +58,7 @@ endif
 
 # Shared -- multiple libraries can be defined
 if SHARED
-shareddir = lib
+shareddir = $(prefix)/lib
 shared_PROGRAMS = libfb303.so
 libfb303_so_SOURCES = $(fb303_lib)
 libfb303_so_CXXFLAGS = $(SHARED_CXXFLAGS)
@@ -68,7 +68,7 @@ endif
 
 # Set up Thrift specific activity here.
 # We assume that a <name>+types.cpp will always be built from <name>.thrift.
-$(eval $(call thrift_template,.,../if/fb303.thrift,-I $(thrift_home)/share  --gen cpp ))
+$(eval $(call thrift_template,.,../if/fb303.thrift,-I $(thrift_home)/share  --gen cpp:pure_enums ))
 
 include_fb303dir = $(includedir)/thrift/fb303
 include_fb303_HEADERS = FacebookBase.h ServiceTracker.h gen-cpp/FacebookService.h gen-cpp/fb303_constants.h gen-cpp/fb303_types.h

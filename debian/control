@@ -3,7 +3,7 @@ Section: misc
 Priority: extra
 Maintainer: goffinet <goffinet@digg.com>
 Uploaders: Sandro Tosi <sandro.tosi@register.it>
-Build-Depends: debhelper (>= 5), autotools-dev, autoconf, automake, libtool, libthrift-dev, libboost-dev, thrift-compiler, python, python-thrift, python-support (>= 1)
+Build-Depends: debhelper (>= 5), autotools-dev, autoconf, automake, libtool, libthrift-dev, libboost-dev | libboost1.40-dev, thrift-compiler, python, python-thrift, python-support (>= 1)
 Standards-Version: 3.8.4
 
 Package: thrift-fb303

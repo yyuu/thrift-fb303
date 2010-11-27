@@ -1,3 +1,10 @@
+thrift-fb303 (0.1-5.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Imported upstream release from Thrift 0.5.0.
+
+ -- Yamashita Yuu <yamashita@geishatokyo.com>  Sun, 28 Nov 2010 01:35:16 +0900
+
 thrift-fb303 (0.1-5) UNRELEASED; urgency=low
 
   * debian/control
